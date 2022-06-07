@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using EasyFix;
+using MelonLoader;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -6,11 +8,11 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные со сборкой.
 [assembly: AssemblyTitle("EasyFix")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Fixing lag creation by objects")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("BlaBlaName")]
 [assembly: AssemblyProduct("EasyFix")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyCopyright("Copyright © BlaBlaName 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -34,3 +36,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: MelonInfo(typeof(EasyFix.Main), ModInfo.Name, ModInfo.Version, ModInfo.Author, ModInfo.DownloadLink)]
+[assembly: MelonGame(null, null)] 
