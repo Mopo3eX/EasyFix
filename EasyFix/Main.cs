@@ -36,7 +36,7 @@ namespace EasyFix
         public static bool OnSync(SyncPhysics __instance, PositionEvent __0, float __1)
         {
             bool result = true;
-            if (Vector3.Distance(ClearPos, __0.field_Public_Vector3_1) > 1000)
+            if (Vector3.Distance(ClearPos, __0.field_Public_Vector3_1) > 1000 || Vector3.Distance(ClearPos, __0.field_Public_Vector3_0) > 150)
                 result = false;
             if (!result)
             {
